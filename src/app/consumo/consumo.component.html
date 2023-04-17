@@ -1,20 +1,14 @@
 <div class="row input-container">
 
     <h1 class="text-center mt-4 title" data-text="&nbsp;Consumo Energético&nbsp;">&nbsp;Consumo Energético&nbsp;</h1>
-
-
-
         <div class="style-form-input full">
             <input type="number" name="nome" [(ngModel)]="pessoas" required />
             <label><i class="icon icon-user-1"></i>Tamanho de sua família:</label>
         </div>
-
-
         <div class="style-form-input full">
             <input type="number" name="nome" [(ngModel)]="comodos" required />
             <label><i class="icon icon-user-1"></i>Quantidade de cômodos:</label>
         </div>
-
         <div class="style-form-input">
             <select class="form-select" aria-label="Default select example" [(ngModel)]="maquinadeLavar">
                 <option selected disabled>Possui Máquinas de Lavar?</option>
@@ -22,7 +16,6 @@
                 <option value="true">Não</option>
             </select>
         </div>
-
         <div class="style-form-input">
             <select class="form-select" aria-label="Default select example"  [(ngModel)]="maquinadeSecar">
                 <option selected disabled>Possui Secadora de Roupa?</option>
@@ -30,27 +23,21 @@
                 <option value="true">Não</option>
             </select>
         </div>
-
         <div class="style-form-input">
             <input type="number" name="nome" [(ngModel)]="tvs" required />
             <label><i class="icon icon-user-1"></i>Quantidade de TVs:</label>
         </div>
-
         <div class="style-form-input">
             <input type="number" name="nome" [(ngModel)]="pcs" required />
             <label><i class="icon icon-user-1"></i>Quantidade de Computadores:</label>
         </div>
-
         <div class="style-form-input full">
             <input type="number" id="secadora" [(ngModel)]="precoporHora" required />
             <label><i class="icon icon-mail-1"></i>Valor Pago de Fatura:</label>
         </div>
-
         <div class="style-form-input full">
             <input type="hidden">
             <button class="btn" (click)="validateInputs()">Calcular</button>
             <h5 [innerHTML]="resultado" class="mt-4"></h5>
         </div>
-
-   
 </div>
